@@ -2,7 +2,6 @@
 
 include "koneksi.php";
 $nim = $_GET['id'];
-
 $sql ="SELECT * FROM mahasiswa WHERE nim=$nim";
 $hasil = mysqli_query($koneksi, $sql);
 if (!$hasil){
